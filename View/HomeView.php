@@ -9,16 +9,21 @@
 <body>
 <div class="container">
     <div class="row">
-        <h3>PHP CRUD Grid</h3>
+        <h3>Lista Kontaktów</h3>
     </div>
     <div class="row">
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Email Address</th>
-                <th>Mobile Number</th>
+                <th>imie</th>
+                <th>nazwisko</th>
+                <th>numer kontaktowy</th>
+                <th>data urodzenia</th>
+                <th>miejscowość</th>
+                <th>adres</th>
+                <th>akcja</th>
             </tr>
+            <?php include ('../Controller/GetUsersController.php'); ?>
             </thead>
             <tbody>
 
