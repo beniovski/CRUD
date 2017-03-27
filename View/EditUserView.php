@@ -7,11 +7,11 @@
 </head>
 <body>
 
-<form class="form-horizontal" method="post" action="../Model/AddUser.php">
+<form class="form-horizontal" method="post" action="../Model/EditUser.php">
     <fieldset>
 
         <!-- Form Name -->
-        <legend>Dodaj kontakt</legend>
+        <legend>Edytuj kontakt</legend>
 
         <!-- Text input-->
         <div class="form-group">
@@ -64,7 +64,7 @@
         <div class="form-inline">
             <label class="col-md-4 control-label" for="singlebutton"></label>
             <div class="col-md-4">
-                <button  id="dodaj" name="dodaj" type="submit" class="btn btn-primary">Dodaj !</button>
+                <button  id="dodaj" name="dodaj" type="submit" class="btn btn-primary">Edytuj !</button>
                 <button  id="reset" name="reset" type="RESET" class="btn btn-warning">Resetuj </button>
             </div>
         </div>

@@ -6,31 +6,27 @@
  * Time: 20:53
  */
 
-
     class dbConnection
     {
-        private $adres = "127.0.0.1";
-        private $dbname = "crud_db";
-        private $password = "";
-        private $user = "root";
-        private $con = null;
-
-        public function __construct()
-        {
-            try {
-                $this->con = new PDO('mysql:host='.$this->adres.';'.'dbname='.$this->dbname, $this->user, $this->password);
-            } catch (PDOException $e) {
-                die();
-            }
+        private static $adres = "127.0.0.1";
+        private static $dbname = "crud_db";
+        private static $password = "";
+        private static $user = "root";
+        private static $instance;
+       
+        private function __construct() {}
+        private function __clone() {}
+               
+        public static function getInstance() {
+        		if(self::$instance === null) {
+        			self::$instance = new PDO('mysql:host='.self::$adres.';'.'dbname='.self::$dbname, self::$user, self::$password);
+        		}
+        		return self::$instance;
+        	}
         }
-
-        public function disconnect()
-        {
-            $this->con = null;
-        }
-
-        public function getCon()
-        {
-            return $this->con;
-        }
-    }
+        
+        
+        
+        
+       
+    
