@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link   href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <link   href="../View/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../View/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<form class="form-horizontal" method="post" action="../Model/EditUser.php">
+<form class="form-horizontal" method="post" action="../Model/EditUser.php?id=<?php echo $_GET["id"];?>">
     <fieldset>
 
         <!-- Form Name -->

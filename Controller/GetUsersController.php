@@ -3,7 +3,6 @@ include ('../Model/GetUsers.php');
 
 Class GetUsersController
 {
-	private $row;
 	private $data;
 	
 	public function __construct()
@@ -26,7 +25,7 @@ Class GetUsersController
 			echo '<th> '.$row["adres"].'</th>';
 			echo '<td><a class="btn btn-primary" href="../View/ReadUserView.php?id='.$row['id'].'">Wyswietl</a>
 					  <a class="btn btn-danger" href="../Controller/DeleteUserController.php?id='.$row['id'].'">Usun</a>
-					  <a class="btn btn-warning" href="read.php?id='.$row['id'].'">Edycja</a>					
+					  <a class="btn btn-warning" href="../View/EditUserView.php?id='.$row['id'].'">Edycja</a>					
 				  </td>';
 			echo "</tr>";
 		}

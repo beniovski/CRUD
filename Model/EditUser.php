@@ -5,6 +5,7 @@
  * Date: 2017-03-27
  * Time: 13:55
  */
+include_once ('dbConnection.php');
 
 class EditUser
 {
@@ -31,3 +32,6 @@ class EditUser
 
     }
 }
+
+$EditUser = new EditUser();
+$EditUser ->Edit($_GET["id"]);

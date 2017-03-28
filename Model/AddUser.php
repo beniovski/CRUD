@@ -1,7 +1,6 @@
 <?php
 include_once ('dbConnection.php');
 
-
 class AddUser
 {	
 	private $con;
