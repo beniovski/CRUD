@@ -1,6 +1,6 @@
 <?php
-include ('../View/DeleteUserView.php');
-include ('../Model/DeleteUser.php');
+include ('View/DeleteUserView.php');
+include ('Model/DeleteUser.php');
 
 class DeleteUserController
 {
@@ -11,4 +11,4 @@ class DeleteUserController
     }
 
 }
-$DelUsCtrl = new DeleteUserController();
+//$DelUsCtrl = new DeleteUserController();

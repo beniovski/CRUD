@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link   href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <link   href="View/css/bootstrap.min.css" rel="stylesheet">
+    <script src="View/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 <div class="container">
-    <div class="row">
+        <div class="row">
         <h3>Lista Kontaktów</h3>
+        <a class="btn btn-primary" href="">Dodaj kontakt </a>
     </div>
     <div class="row">
         <table class="table table-striped table-bordered">
@@ -23,7 +24,7 @@
                 <th>adres</th>
                 <th>akcja</th>
             </tr>
-            <?php include ('../Controller/GetUsersController.php'); ?>
+            <?php include ('Controller/GetUsersController.php'); ?>
             </thead>
             <tbody>
 
