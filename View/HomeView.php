@@ -10,7 +10,7 @@
 <div class="container">
         <div class="row">
         <h3>Lista Kontaktów</h3>
-        <a class="btn btn-primary" href="">Dodaj kontakt </a>
+        <a class="btn btn-primary" href="?action=AddUser">Dodaj kontakt </a>
     </div>
     <div class="row">
         <table class="table table-striped table-bordered">

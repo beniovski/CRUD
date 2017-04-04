@@ -26,8 +26,7 @@ class AddUser
 		
 	}
 }
-$addUser = new AddUser();
-$addUser->Add($_POST);
+	
 
 
 

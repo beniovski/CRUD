@@ -23,9 +23,9 @@ Class GetUsersController
 			echo '<th> '.$row["dataUr"].'</th>';
 			echo '<th> '.$row["miejscowosc"].'</th>';
 			echo '<th> '.$row["adres"].'</th>';
-			echo '<td><a class="btn btn-primary" href="../?action=ReadUser&id='.$row['id'].'">Wyswietl</a>
-					  <a class="btn btn-danger" href="../?action=Delete&id='.$row['id'].'">Usun</a>
-					  <a class="btn btn-warning" href="../View/EditUserView.php?id='.$row['id'].'">Edycja</a>					
+			echo '<td><a class="btn btn-primary" href="?action=ReadUser&id='.$row['id'].'">Wyswietl</a>
+					  <a class="btn btn-danger"  href="?action=Delete&id='.$row['id'].'">Usun</a>
+					  <a class="btn btn-warning" href="/View/EditUserView.php?id='.$row['id'].'">Edycja</a>					
 				  </td>';
 			echo "</tr>";
 		}

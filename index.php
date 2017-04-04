@@ -7,29 +7,35 @@
  */
 
 
+$action = $_GET["action"];
  
- 
-if(!isset($GET_["action"]))
-{
-	include 'View/HomeView.php';
-}
-else 
-{
-	$action = $_GET["action"];
-	
-	if ($action == "ReadUser")
+	 
+	if(!isset($_GET["action"]))
 	{
-		include 'Controller/ReadUserController.php';
+		include 'Controller/HomeViewController.php';
+		$hvc = new HomeViewController();
+	}
+
+	
+	 if ($action == "ReadUser")
+	{
+		include '/View/ReadUserView.php';
 		$action = new  ReadUserController();
-		$action->ReturnData();
+		
 	}
 	
-	if ($action == "Delete")
+     if ($action == "Delete")
 	{
-		include 'Controller/DeleteUserController.php';
+		include '/Controller/DeleteUserController.php';
 		$action = new  DeleteUserController();
 		
 	}
-}
- 
+	
+	if ($action == "AddUser")
+	{
+		include '/Controller/AddUserController.php';
+		$action = new  AddUserController();
+		
+	}
+
  

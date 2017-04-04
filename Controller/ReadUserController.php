@@ -6,7 +6,9 @@
  * Time: 12:08
  */
 
+
 include ('Model/ReadUser.php');
+
 
 class ReadUserController
 {
@@ -31,5 +33,5 @@ class ReadUserController
 
 }
 
-//$ReadUserCtrl = new ReadUserController();
-//$ReadUserCtrl->ReturnData();
+$ReadUserCtrl = new ReadUserController();
+$ReadUserCtrl->ReturnData();

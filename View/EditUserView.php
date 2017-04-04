@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link   href="../View/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../View/js/bootstrap.min.js"></script>
+    <link   href="View/css/bootstrap.min.css" rel="stylesheet">
+    <script src="View/js/bootstrap.min.js"></script>
 </head>
 <body>
 
